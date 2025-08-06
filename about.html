@@ -1,0 +1,42 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+  <style>
+    /* Same CSS as in index.html */
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About</h1>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <nav id="sideMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>About Us</h2>
+    <p>This is the About page. You can write info about your team or business here.</p>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("sideMenu");
+      menu.classList.toggle("show");
+      document.body.classList.toggle("menu-open");
+    }
+  </script>
+
+</body>
+</html>
