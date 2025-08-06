@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamburger Menu</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-btn {
+      font-size: 24px;
+      cursor: pointer;
+      display: block;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      height: 100%;
+      width: 250px;
+      background: #444;
+      color: white;
+      padding-top: 60px;
+      transition: left 0.3s ease;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      padding: 15px 20px;
+      border-bottom: 1px solid #555;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav.show {
+      left: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    /* Optional: Prevent scrolling when menu is open */
+    body.menu-open {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Site</h1>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <nav id="sideMenu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Welcome!</h2>
+    <p>This page has a hamburger menu optimized for mobile, like the Samsung A56.</p>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("sideMenu");
+      menu.classList.toggle("show");
+      document.body.classList.toggle("menu-open");
+    }
+  </script>
+
+</body>
+</html>
