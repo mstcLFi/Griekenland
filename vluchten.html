@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Google Maps</title>
+  <title>Vluchten</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <header>
-    <h1>Google Maps</h1>
+    <h1>Vluchten</h1>
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
   </header>
 
@@ -24,15 +24,29 @@
   </nav>
 
   <main>
-    <div class="responsive-iframe-container">
+    <h2>Heenreis</h2>
+    <div class="flight-iframe-container">
       <iframe 
-        src="https://www.google.com/maps/d/embed?mid=1AudC9Wn08aYtuOPdCLKk340WhySBTmI&ehbc=2E312F"
+        src="https://www.flightera.net/nl/widgets/flight?flnr=HV6597&nrFlights=2" 
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <h2>Terugreis</h2>
+    <div class="flight-iframe-container">
+      <iframe 
+        src="https://www.flightera.net/nl/widgets/flight?flnr=OR1116&nrFlights=2" 
+        frameborder="0"
         allowfullscreen
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
   </main>
+
 
   <script>
     function toggleMenu() {

@@ -76,8 +76,10 @@ main {
 /* Responsive iframe container */
 .responsive-iframe-container {
   width: 100%;
-  aspect-ratio: 9 / 16; /* Full height feel for tall screens */
-  border: 1px solid black;
+  max-width: 100%;
+  height: 750px; /* or adjust to 250px if you prefer */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
 }
 
 .responsive-iframe-container iframe {
@@ -86,7 +88,40 @@ main {
   border: 0;
 }
 
+.flight-iframe-container {
+  width: 100%;
+  max-width: 100%;
+  height: 275px; /* Adjust as needed to match content */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.flight-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* Menu open body fix */
 body.menu-open {
   overflow: hidden;
+}
+
+.pdf-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+  background-color: #0056b3;
 }
