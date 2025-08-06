@@ -25,10 +25,14 @@
   </nav>
 
   <main>
-<iframe width="412" height="600" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=kt&zoom=10&overlay=wind&product=ecmwf&level=surface&lat=38.978&lon=20.263&detailLat=39.599&detailLon=19.992&detail=true&message=true" frameborder="0"></iframe>
+    <div class="responsive-iframe-container">
+      <iframe
+        src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=kt&zoom=10&overlay=wind&product=ecmwf&level=surface&lat=38.978&lon=20.263&detailLat=39.599&detailLon=19.992&detail=true&message=true"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
   </main>
-
-
 
   <script>
     function toggleMenu() {
